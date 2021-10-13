@@ -7,6 +7,13 @@ const logWord = (word) => {
   })
 }
 
+// Process A
+logWord('a')
+  .then(() => logWord('b'))
+  .then(() => logWord('c'))
+  .then(() => logWord('d'))
+
+// Process B
 // logWord('a')
 //   .then(() => {
 //     logWord('b')
@@ -18,9 +25,4 @@ const logWord = (word) => {
 //     logWord('d')
 //   })
 
-logWord('a')
-  .then(() => logWord('b'))
-  .then(() => logWord('c'))
-  .then(() => logWord('d'))
-
-// 為何兩者順序有差？
+// Why both process difference？
